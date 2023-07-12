@@ -22,3 +22,35 @@ $('.slider-img').owlCarousel({
 		},
 	},
 });
+
+$('.three-img-slider').owlCarousel({
+	loop: false,
+	margin: 30,
+	nav: false,
+	autoplay: false,
+	autoplayTimeout: 5000,
+	autoplayHoverPause: true,
+	dots: false,
+	center: false,
+	touchDrag: false,
+	mouseDrag: false,
+	smartSpeed: 2000,
+	responsive: {
+		0: {
+			items: 2,
+			loop: true,
+			center: false,
+			touchDrag: true,
+			mouseDrag: true,
+			margin: 10,
+			autoplay: true,
+		},
+
+		768: {
+			items: 3,
+		},
+		1000: {
+			items: 3,
+		},
+	},
+});
